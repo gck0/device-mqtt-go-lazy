@@ -13,4 +13,7 @@ fi
 echo DataTopic = \"${DATATOPIC}\"
 echo ResponseTopic = \"${RESPONSETOPIC}\"
 cp ./cmd/res/configuration-base.toml ./cmd/res/configuration.toml
-sed -i "s/\"DataTopic\"/\"$DATATOPIC\"/;s/\"ResponseTopic\"/\"$RESPONSETOPIC\"/;s/\"clientid-mqtt\"/\"$CLIENTID\"/" ./cmd/res/configuration.toml
+#change clientid?
+#sed -i "s/\"DataTopic\"/\"$DATATOPIC\"/;s/\"ResponseTopic\"/\"$RESPONSETOPIC\"/;s/\"device-mqtt\"/\"$CLIENTID\"/" ./cmd/res/configuration.toml
+sed -i "s/\"DataTopic\"/\"$DATATOPIC\"/;s/\"ResponseTopic\"/\"$RESPONSETOPIC\"/" ./cmd/res/configuration.toml
+
