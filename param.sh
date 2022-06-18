@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ##default values##
 DATATOPIC=dt0
 RESPONSETOPIC=rt0
