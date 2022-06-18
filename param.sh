@@ -24,7 +24,7 @@ Exec()
   DATATOPIC=$1
   RESPONSETOPIC=$2
   cp ./cmd/res/configuration-base.toml ./cmd/res/configuration.toml
-  sed -i 's/\"DataTopic\"/\"$DATATOPIC\"/;s/\"ResponseTopic\"/\"$RESPONSETOPIC\"/' ./cmq/res/configuration.toml
+  sed -i 's/\"DataTopic\"/\"$DATATOPIC\"/;s/\"ResponseTopic\"/\"$RESPONSETOPIC\"/' ./cmd/res/configuration.toml
 }
 
 
